@@ -3,6 +3,7 @@ import './styles/App.scss';
 import Collapsable from './components/Collapsable';
 import { TOPIC_VICE_QUESTIONS } from './constants/questions'
 import DownArrow from './images/down-arrow.svg'
+import Navbar from './components/Navbar';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div className="container">
+      <Navbar />
       <header className="App-header">
         <h1>Hi I'm Raghav Budhiraja</h1>
         <p>I have created this page to share my Coding Solutions.</p>
