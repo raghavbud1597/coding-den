@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.scss';
+import Collapsable from './components/Collapsable';
+import { TOPIC_VICE_QUESTIONS } from './constants/questions'
 
 function App() {
+
+  const topicList = TOPIC_VICE_QUESTIONS.map(topic => <Collapsable topic={topic} />)
+
   return (
-    <div className="App">
+    <div className="container">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Hi I'm Raghav Budhiraja</h1>
+        <p>I have created this page to share my Coding Solutions.</p>
       </header>
+     { topicList }
     </div>
   );
 }
