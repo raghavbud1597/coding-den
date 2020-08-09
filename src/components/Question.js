@@ -7,7 +7,7 @@ export default function Question({question}) {
     return (
         <div className="collapsable p-4 m-2">
             <p data-toggle="collapse" href={collapsable_link} role="button" aria-expanded="false" aria-controls={collapsable_id}>
-                <span className="mr-2">{question.question_number}</span>
+                <span className="mr-4">{question.question_number}</span>
                 <span>{question.question_title}</span>
             </p>
             <div className="collapse" id={collapsable_id}>

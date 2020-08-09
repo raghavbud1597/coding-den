@@ -8,3 +8,15 @@
   text-align: center;
 }
 
+.scroll-down {
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  width: 95%;
+
+  &-icon{
+    height: 40px;
+    width: 40px;
+  }
+}
+
