@@ -12,7 +12,7 @@ export default function Navbar() {
                     <a className="nav-link" href="#question-list">List</a>
                 </li>
                 <li className="nav-item active">
-                    <a className="nav-link" href="#">Subscribe</a>
+                    <a className="nav-link" href="#subscription">Subscribe</a>
                 </li>
             </ul>
         </div>
